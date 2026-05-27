@@ -111,6 +111,95 @@ body {
     border-radius: 4vh;
 }
 
+/**/
+
+.over-ons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.over-ons-introduction-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+}
+
+.over-ons-title {
+    font-size: 5vh;
+    color: green;
+}
+
+.over-ons-paragraph {
+    margin: 0px;
+    color: gray;
+    font-size: 3vh;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.over-ons-blokje-container {
+    display: flex;
+    gap: 50px;
+}
+
+.over-ons-icon-colour-green {
+    display: flex;
+    background-color: green;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.over-ons-icon-colour-red {
+    display: flex;
+    background-color: #BA0F00;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.over-ons-icon-colour-yellow {
+    display: flex;
+    background-color: #CCB906;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.over-ons-blokje {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 15px;
+    align-items: center;
+    transition: 0.2s;
+    box-shadow: 0px 4px 10px #C4C4C4;
+}
+
+.lc:hover {
+    padding: 15px;
+    box-shadow: 0px 0px 10px green;
+}
+
+.vh:hover {
+    padding: 15px;
+    box-shadow: 0px 0px 10px #BA0F00;
+}
+
+.ic:hover {
+    padding: 15px;
+    box-shadow: 0px 0px 10px #CCB906;
+}
+
+.over-ons-blokje p {
+    max-width: 400px;
+}
+
 @media screen and (max-width: 600px) {
     .landing-page-image-big {
         display: none;
@@ -138,5 +227,18 @@ body {
 
     .hamburger {
         display: flex;
+    }
+
+    /**/
+
+    .over-ons-blokje-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
+    .over-ons-paragraph {
+        font-size: 16px;
+        max-width: 500px;
     }
 }
