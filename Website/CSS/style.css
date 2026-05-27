@@ -14,3 +14,129 @@ ul {
 body {
     margin: 0px;
 }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5vw;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.header-links {
+    display: flex;
+    gap: 4vw;
+}
+
+.header-href {
+    color: black;
+    transition: 0.3s;
+}
+
+.header-href:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    font-size: 7vw;
+}
+
+.landing-page-container {
+    flex-direction: column;
+    display: flex;
+    height: 60vh;
+}
+
+.black-background-image {
+    display: flex;
+    width: 100%;
+    background-color: black;
+}
+
+.landing-page-image-big {
+    opacity: 40%;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.landing-page-image-small {
+    opacity: 40%;
+    height: 100%;
+    max-width: 100%;
+    display: none;
+}
+
+.landing-page-introductie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25vw;
+    color: white;
+    z-index: 1000;
+}
+
+.landing-page-introductie h1 {
+    font-size: 6vw;
+    margin: 0px;
+}
+
+.landing-page-introductie h2 {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+.landing-page-introductie a {
+    color: black;
+    font-family: Arial;
+    font-size: 1.5vh;
+    display: flex;
+    background: #00ff08;
+    background: linear-gradient(90deg, rgba(0, 255, 8, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    border: none;
+    padding: 1.2vh 2.4vh;
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.landing-page-introductie a:hover {
+    box-shadow: 0px 0px 10px white;
+    padding: 2vh 3.5vh;
+    border-radius: 4vh;
+}
+
+@media screen and (max-width: 600px) {
+    .landing-page-image-big {
+        display: none;
+    }
+
+    .landing-page-image-small {
+        display: block;
+    }
+
+    .landing-page-introductie {
+        margin-top: -20vh;
+    }
+
+    .landing-page-introductie h1 {
+        font-size: 4vh;
+    }
+
+    .landing-page-introductie h2 {
+        font-size: 2vh;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
