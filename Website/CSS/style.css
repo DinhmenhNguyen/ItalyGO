@@ -135,7 +135,9 @@ body {
 .over-ons-paragraph {
     margin: 0px;
     color: gray;
-    font-size: 2vh;
+    font-size: 3vh;
+    max-width: 1000px;
+    text-align: center;
 }
 
 .icon {
@@ -225,5 +227,18 @@ body {
 
     .hamburger {
         display: flex;
+    }
+
+    /**/
+
+    .over-ons-blokje-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
+    .over-ons-paragraph {
+        font-size: 16px;
+        max-width: 500px;
     }
 }
