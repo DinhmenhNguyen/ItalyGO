@@ -200,6 +200,60 @@ body {
     max-width: 400px;
 }
 
+/**/
+
+.populaire-bestemmingen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+.populaire-bestemmingen-introduction-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+}
+
+.populaire-bestemmingen-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 67px;
+}
+
+.populaire-bestemmingen-image {
+    height: 400px;
+    border-radius: 2vh;
+    filter: brightness(70%);
+}
+
+.populaire-bestemmingen-link-button{
+    color: black;
+    font-family: Arial;
+    display: block;
+    background: #00ff08;
+    background: linear-gradient(90deg, rgba(0, 255, 8, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 0, 0, 1) 100%);
+    border: none;
+    padding: 1.2vh 2.4vh;
+    border-radius: 2vh;
+    transition: 0.2s;
+}
+
+.image-text {
+    margin-top: -140px;
+    padding: 10px;
+    color: white;
+    font-size: 2.5vh;
+    filter: brightness(100%);
+}
+
+.populaire-bestemmingen-link-button:hover {
+    box-shadow: 0px 0px 10px white;
+    padding: 2vh 3.5vh;
+    border-radius: 4vh;
+}
+
 @media screen and (max-width: 600px) {
     .landing-page-image-big {
         display: none;
@@ -240,5 +294,13 @@ body {
     .over-ons-paragraph {
         font-size: 16px;
         max-width: 500px;
+    }
+    
+    .over-ons-container {
+        height: 140vh;
+    }
+
+    .populaire-bestemmingen-images-container {
+        flex-direction: column;
     }
 }
