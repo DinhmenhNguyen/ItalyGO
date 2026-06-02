@@ -20,16 +20,16 @@
             <img class="logo" src="Images/ItalyGO.png">
             <ul class="header-links">
                 <li>
-                    <a class="header-href" href="index.html">Home</a>
+                    <a class="header-href" href="index.php">Home</a>
                 </li>
                 <li>
-                    <a class="header-href" href="bestemmingen.html">Bestemmingen</a>
+                    <a class="header-href" href="bestemmingen.php">Bestemmingen</a>
                 </li>
                 <li>
-                    <a class="header-href" href="contact.html">Contact</a>
+                    <a class="header-href" href="contact.php">Contact</a>
                 </li>
                 <li>
-                    <a class="header-href" href="booking.html">Booking</a>
+                    <a class="header-href" href="booking.php">Booking</a>
                 </li>
             </ul>
             <span class="hamburger">
