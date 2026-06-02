@@ -25,6 +25,7 @@ body {
 .logo {
     width: 100px;
     height: auto;
+    border-radius: 100%;
 }
 
 .header-links {
@@ -254,6 +255,58 @@ body {
     border-radius: 4vh;
 }
 
+/**/
+
+.footer-container {
+    background-color: #2C7344;
+    padding: 4vh;
+}
+
+.logo-footer {
+    width: 70px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.footer-intro {
+    max-width: 400px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+.footer-intro-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: ghostwhite;
+}
+
+.footer-intro p {
+    color: #B0B0B0;
+}
+
+.rechten-footer {
+    display: flex;
+    justify-content: center;
+    color: #B0B0B0;
+    text-decoration: overline;
+}
+
+.footer-contact h1 {
+    color: goldenrod;
+    font-size: 18px;
+}
+
+.footer-contact h2 {
+    font-size: 20px;
+    color: #B0B0B0;
+}
+
+
 @media screen and (max-width: 600px) {
     .landing-page-image-big {
         display: none;
@@ -302,5 +355,9 @@ body {
 
     .populaire-bestemmingen-images-container {
         flex-direction: column;
+    }
+
+    .footer-container {
+        margin-top: 160vh;
     }
 }
