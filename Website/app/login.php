@@ -41,6 +41,23 @@
         </div>
     </header>
 
+    <main>
+        <section class="login-section">
+            <div class="login-container">
+                <h1>Login</h1>
+                <form action="process_login.php" method="POST" class="login-form">
+                    <label for="username">Username:</label>
+                    <input class="login-input" type="text" id="username" name="username" required>
+
+                    <label for="password">Password:</label>
+                    <input class="login-input" type="password" id="password" name="password" required>
+
+                    <button class="login-button" type="submit">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-intro">
