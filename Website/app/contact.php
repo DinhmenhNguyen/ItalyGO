@@ -39,6 +39,11 @@
                 ≡
             </span>
         </div>
+        <div class = contact-start>
+            <h1>
+                Onze bestemmingen
+            </h1>
+        </div>    
     </header>
 
     <footer class="footer-container">
