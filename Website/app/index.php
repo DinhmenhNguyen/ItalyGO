@@ -33,6 +33,9 @@
                 <li>
                     <a class="header-href" href="booking.php">Booking</a>
                 </li>
+                <li>
+                    <a class="header-href" href="login.php">Login</a>
+                </li>
             </ul>
             <span class="hamburger">
                 ≡
