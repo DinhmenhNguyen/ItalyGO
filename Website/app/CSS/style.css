@@ -43,11 +43,6 @@ body {
     text-decoration: underline;
 }
 
-.hamburger {
-    display: none;
-    font-size: 7vw;
-}
-
 .landing-page-container {
     flex-direction: column;
     display: flex;
@@ -229,7 +224,7 @@ body {
     filter: brightness(70%);
 }
 
-.populaire-bestemmingen-link-button{
+.populaire-bestemmingen-link-button {
     color: black;
     font-family: Arial;
     display: block;
@@ -275,7 +270,7 @@ body {
 .footer-content {
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 .footer-intro-container {
@@ -287,7 +282,7 @@ body {
 
 .footer-intro p {
     color: #B0B0B0;
-} 
+}
 
 .rechten-footer {
     display: flex;
@@ -345,6 +340,27 @@ body {
     transition: 0.2s;
 }
 
+/**/
+
+.bestemmingen-start {
+    background-color: #2C7344;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.bestemmingen-start h1 {
+    margin-bottom: 0px;
+    font-size: 8vw;
+}
+
+.bestemmingen-start p {
+    font-size: 2vw;
+}
+
 @media screen and (max-width: 600px) {
     .landing-page-image-big {
         display: none;
@@ -370,10 +386,6 @@ body {
         display: none;
     }
 
-    .hamburger {
-        display: flex;
-    }
-
     /**/
 
     .over-ons-blokje-container {
@@ -386,7 +398,7 @@ body {
         font-size: 16px;
         max-width: 500px;
     }
-    
+
     .over-ons-container {
         height: 140vh;
     }
@@ -398,16 +410,8 @@ body {
     .footer-container {
         margin-top: 160vh;
     }
-}
-.contact-start{
-    background-color: #2C7344;
-    color: white;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 30vh;
-}
-.contact-start h1{
-    margin-top:140px;   
-    font-size:50px; 
+
+    .bestemmingen-start p {
+        font-size: 16px;
+    }
 }

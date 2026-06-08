@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,26 +24,25 @@
     <header>
         <div class="header-container">
             <img class="logo" src="Images/ItalyGO.png">
-            <ul class="header-links">
-                <li>
-                    <a class="header-href" href="index.php">Home</a>
-                </li>
-                <li>
-                    <a class="header-href" href="bestemmingen.php">Bestemmingen</a>
-                </li>
-                <li>
-                    <a class="header-href" href="contact.php">Contact</a>
-                </li>
-                <li>
-                    <a class="header-href" href="booking.php">Booking</a>
-                </li>
-                <li>
-                    <a class="header-href" href="login.php">Login</a>
-                </li>
-            </ul>
-            <span class="hamburger">
-                ≡
-            </span>
+            <nav>
+                <ul class="header-links">
+                    <li>
+                        <a class="header-href" href="index.php">Home</a>
+                    </li>
+                    <li>
+                        <a class="header-href" href="bestemmingen.php">Bestemmingen</a>
+                    </li>
+                    <li>
+                        <a class="header-href" href="contact.php">Contact</a>
+                    </li>
+                    <li>
+                        <a class="header-href" href="booking.php">Booking</a>
+                    </li>
+                    <li>
+                        <a class="header-href" href="login.php">Login</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
