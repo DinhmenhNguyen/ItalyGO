@@ -39,10 +39,11 @@
                 ≡
             </span>
         </div>
-        <div class = contact-start>
+        <div class ="contact-start">
             <h1>
-                Onze bestemmingen
+                Neem contact op
             </h1>
+            <h2>Wij helpen je graag met al je vragen over onze Italiaanse reizen</h2>
         </div>    
     </header>
 

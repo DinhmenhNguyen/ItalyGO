@@ -37,9 +37,28 @@
                     <a class="header-href" href="login.php">Login</a>
                 </li>
             </ul>
-            <span class="hamburger">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
                 ≡
-            </span>
+            </div>
+            <ul class="dropdown">
+                <li>
+                    <a class="header-href" href="index.php">Home</a>
+                </li>
+                <li>
+                    <a class="header-href" href="bestemmingen.php">Bestemmingen</a>
+                </li>
+                <li>
+                    <a class="header-href" href="contact.php">Contact</a>
+                </li>
+                <li>
+                    <a class="header-href" href="booking.php">Booking</a>
+                </li>
+                <li>
+                    <a class="header-href" href="login.php">Login</a>
+                </li>
         </div>
     </header>
 
