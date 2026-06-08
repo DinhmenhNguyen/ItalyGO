@@ -43,6 +43,12 @@ session_start();
                 ≡
             </span>
         </div>
+        <div class ="contact-start">
+            <h1>
+                Neem contact op
+            </h1>
+            <h2>Wij helpen je graag met al je vragen over onze Italiaanse reizen</h2>
+        </div>    
     </header>
 
     <footer class="footer-container">
