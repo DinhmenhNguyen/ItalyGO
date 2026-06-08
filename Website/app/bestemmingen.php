@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +47,17 @@
 
     <main>
         <section>
-            
+            <div class=bestemmingen-start>
+                <h1>
+                    Onze bestemmingen
+                </h1>
+                <p>Kies uit onze zorgvuldig geselecteerde Italiaanse steden</p>
+            </div>
+        </section>
+
+        <section class="bestemmingen-section">
+            <?php
+            ?>
         </section>
     </main>
 
