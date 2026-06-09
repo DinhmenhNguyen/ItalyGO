@@ -1,7 +1,8 @@
-const hamburger = document.querySelector('.hamburger');
-const dropdown = document.querySelector('.nav-menu');
-console.log(hamburger, dropdown);
-
-hamburger.addEventListener('click', function () {
-  dropdown.classList.toggle('open');
-}   );
+function togglemenu() {
+  var dropdown = document.getElementById("dropdown");
+  if (dropdown.hidden == false) {
+    dropdown.hidden = true;
+  } else {
+    dropdown.hidden = false;
+  }
+}

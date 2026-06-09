@@ -43,6 +43,24 @@ body {
     text-decoration: underline;
 }
 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#dropdown {
+    position: absolute;
+    flex-direction: row-reverse;
+    top: 60px;
+    right: 5vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
 .landing-page-container {
     flex-direction: column;
     display: flex;
@@ -410,13 +428,19 @@ body {
     .footer-container {
         margin-top: 160vh;
     }
+
+    .hamburger {
+        display: block;
+    }
 }
-.contact-start{
+
+.contact-start {
     background-color: #2C7344;
     color: white;
     height: 30vh;
 }
-.contact-start h1{ 
-    font-size:50px; 
-    
+
+.contact-start h1 {
+    font-size: 50px;
+
 }
