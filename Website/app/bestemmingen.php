@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+include('includes/database.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,8 +28,35 @@ session_start();
             </div>
         </section>
 
+        <?php
+        $sql = "SELECT * FROM ItalyGO";
+
+        $statement = $pdo->prepare($sql);
+
+        $statement->execute();
+
+        $bestemmingen = $statement->fetchAll();
+
+        $statement->fetchAll();
+
+        foreach ($bestemmingen as $bestemming) {
+            $naam = $bestemming['naam'];
+            $beschrijving = $bestemming['beschrijving'];
+            $prijs = $bestemming['prijs'];
+            $afbeelding = $bestemming['afbeelding'];
+        }
+        ?>
         <section class="bestemmingen-section">
-            
+            <div>
+                <img class="bestemmingen-image" src="Images/<?php echo $afbeelding;?>" alt="Bestemming 1">
+                <div>
+                    <div>
+                        <h1><?php echo $naam;?></h1>
+                        <p><?php echo $beschrijving;?></p>
+                        <a href="bestemmingen.html">Meer Info →</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

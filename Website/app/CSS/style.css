@@ -371,12 +371,17 @@ body {
 }
 
 .bestemmingen-start h1 {
-    margin-bottom: 0px;
+    margin: 0px;
     font-size: 8vw;
 }
 
 .bestemmingen-start p {
-    font-size: 2vw;
+    font-size: 3vw;
+    margin: 0px;
+}
+
+.bestemmingen-image {
+    width: 300px;
 }
 
 @media screen and (max-width: 600px) {
