@@ -52,16 +52,16 @@ include('includes/database.php');
             }
 
             echo "<section class='bestemmingen-section'>";
-            echo "<div>";
+            echo "<div class='bestemmingen-card'>";
+            echo "<div class='bestemmingen-container'>";
             echo "<img class='bestemmingen-image' src='bestemmingen-images/$afbeelding' alt='Bestemming 1'>";
-            echo "<div>";
-            echo "<div>";
+            echo "</div>";
+            echo "<div class='bestemmingen-info'>";
             echo "<h1>$naam</h1>";
             echo "<p>$beschrijving</p>";
             echo "<span class='bestemmingen-price'>Vanaf €$prijs</span>";
-            echo "</div>";
-            echo "<div>";
-            echo "<a href='booking-info.php'>Meer Info →</a>";
+            echo "<div class='bestemmingen-link-button-container'>";
+            echo "<a class='bestemmingen-link-button' href='booking-info.php'>Meer Info →</a>";
             echo "</div>";
             echo "</div>";
             echo "</div>";
