@@ -16,6 +16,7 @@ session_start();
     include('includes/header.php');
     ?>
 <div class="contact-container">
+<<<<<<< Updated upstream
       <h1>Contact</h1>
      <p>Wij helpen je graag met al je vragen over onze Italiaanse reizen.</p>
 </div>
@@ -28,6 +29,11 @@ session_start();
           <button type="submit">Verzenden</button>
         </form>
    </section>
+=======
+    <h1>Neem contact op</h1>
+    <p>Wij helpen je graag met al je vragen over onze Italiaanse reizen.</p>
+</div>    
+>>>>>>> Stashed changes
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-intro">
