@@ -48,11 +48,15 @@ include('includes/database.php');
         ?>
         <section class="bestemmingen-section">
             <div>
-                <img class="bestemmingen-image" src="Images/<?php echo $afbeelding;?>" alt="Bestemming 1">
+                <img class="bestemmingen-image" src="Images/<?php echo $afbeelding; ?>" alt="Bestemming 1">
                 <div>
                     <div>
-                        <h1><?php echo $naam;?></h1>
-                        <p><?php echo $beschrijving;?></p>
+                        <h1><?php echo $naam; ?></h1>
+                        <p><?php echo $beschrijving; ?></p>
+                        <span class="bestemmingen-price">Vanaf €<?php echo $prijs; ?></span>
+                    </div>
+                    <div>
+
                         <a href="bestemmingen.html">Meer Info →</a>
                     </div>
                 </div>

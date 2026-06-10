@@ -49,7 +49,23 @@ body {
 
 .hamburger {
     display: none;
-    font-size: 7vw;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+#dropdown {
+    position: absolute;
+    flex-direction: row-reverse;
+    top: 60px;
+    right: 5vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    font-size: 18px;
 }
 
 .landing-page-container {
@@ -308,6 +324,71 @@ body {
 .footer-contact h2 {
     font-size: 20px;
     color: #B0B0B0;
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #2C7344;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.login-button {
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+/**/
+
+.bestemmingen-start {
+    background-color: #2C7344;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
+}
+
+.bestemmingen-start h1 {
+    margin: 0px;
+    font-size: 8vw;
+}
+
+.bestemmingen-start p {
+    font-size: 3vw;
+    margin: 0px;
+}
+
+.bestemmingen-image {
+    width: 300px;
 }
 
 
