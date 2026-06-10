@@ -29,7 +29,7 @@ include('includes/database.php');
         </section>
 
         <?php
-        $sql = "SELECT * FROM ItalyGO";
+        $sql = "SELECT * FROM Bestemmingen";
 
         $statement = $pdo->prepare($sql);
 
@@ -44,57 +44,35 @@ include('includes/database.php');
             $beschrijving = $bestemming['beschrijving'];
             $prijs = $bestemming['prijs'];
             $afbeelding = $bestemming['afbeelding'];
+
+            if ($afbeelding == "") {
+                $afbeelding = "https://via.placeholder.com/400x300?text=Geen+Afbeelding";
+            } else {
+                $afbeelding = $afbeelding;
+            }
+
+            echo "<section class='bestemmingen-section'>";
+            echo "<div>";
+            echo "<img class='bestemmingen-image' src='bestemmingen-images/$afbeelding' alt='Bestemming 1'>";
+            echo "<div>";
+            echo "<div>";
+            echo "<h1>$naam</h1>";
+            echo "<p>$beschrijving</p>";
+            echo "<span class='bestemmingen-price'>Vanaf €$prijs</span>";
+            echo "</div>";
+            echo "<div>";
+            echo "<a href='booking-info.php'>Meer Info →</a>";
+            echo "</div>";
+            echo "</div>";
+            echo "</div>";
+            echo "</section>";
         }
         ?>
-        <section class="bestemmingen-section">
-            <div>
-                <img class="bestemmingen-image" src="Images/<?php echo $afbeelding;?>" alt="Bestemming 1">
-                <div>
-                    <div>
-                        <h1><?php echo $naam;?></h1>
-                        <p><?php echo $beschrijving;?></p>
-                        <a href="bestemmingen.html">Meer Info →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="footer-container">
-        <div class="footer-content">
-            <div class="footer-intro">
-                <div class="footer-intro-container">
-                    <img class="logo-footer" src="Images/ItalyGO.png">
-                    <h1>
-                        ItalyGO Travel
-                    </h1>
-                </div>
-                <p>
-                    Ontdek de schoonheid van Italië met onze luxe busreizen. Comfort, veiligheid en authentieke
-                    Italiaanse ervaringen.
-                </p>
-            </div>
-            <div class="footer-contact">
-                <h1>
-                    Contact
-                </h1>
-                <h2>
-                    +31 20 123 4567
-                </h2>
-                <h2>
-                    info@italygo.nl
-                </h2>
-                <h2>
-                    Amsterdam, Nederland
-                </h2>
-            </div>
-        </div>
-        <div class="rechten-footer">
-            <p>
-                © 2026 ItalyGO Travel. Alle rechten voorbehouden.
-            </p>
-        </div>
-    </footer>
+    <?php
+    include('includes/footer.php');
+    ?>
 </body>
 
 </html>
