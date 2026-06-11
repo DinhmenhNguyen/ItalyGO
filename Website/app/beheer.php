@@ -1,5 +1,11 @@
 <?php
 session_start();
+include('includes/database.php');
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
+  header("Location: login.php");
+}
+
 ?>
 
 <!DOCTYPE html>

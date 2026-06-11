@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('includes/database.php');
 
 $username = "user";
 $password = "password";
@@ -45,6 +46,7 @@ if (isset($_POST["username"]) && isset($_POST["password"]) !== "") {
                     <input class="login-input" type="password" id="password" name="password" placeholder="••••••••" required>
 
                     <button class="login-button" type="submit">Login</button>
+                    <a href="account-aanmaken.php" class="login-link">Account aanmaken</a>
                 </form>
             </div>
         </section>
