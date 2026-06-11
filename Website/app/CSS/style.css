@@ -523,7 +523,14 @@ body {
     font-size: 16px;
     margin-top: 10px;
 }
+    border-radius: 10px;
+}
 
+.login-link {
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 10px;
+}
 .contact-form button,
 .contact-form input,
 .contact-form textarea{
