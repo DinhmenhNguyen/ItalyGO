@@ -466,5 +466,17 @@ body {
     gap: 20px;
     margin-top: 20px;
     max-width: 600px;
-    border-radius: 10px;
+}
+.contact-form button,
+.contact-form input,
+.contact-form textarea{
+  width: 100%;  
+  border-radius: 5px;
+}
+.contact-form textarea {
+    height: 150px;
+}
+.contact-form button {
+    background-color:green;
+    color:white;
 }
