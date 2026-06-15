@@ -38,6 +38,7 @@ session_start();
                 <p><strong>Openingstijden:</strong> Ma-Vr: 09:00 - 18:00</p>
             </div>
         </div>
+        <div id="map"></div>
     </section>
     <?php
     include('includes/footer.php');
