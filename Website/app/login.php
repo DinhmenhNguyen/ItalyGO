@@ -22,6 +22,8 @@ if (isset($_POST["username"])) {
 
             if ($role == 'beheer') {
                 header("Location: beheer.php");
+            } else {
+                header("Location: klant-overzicht.php");
             }
         } else {
             echo "wachtwoord klopt niet";
@@ -29,22 +31,6 @@ if (isset($_POST["username"])) {
     } else {
         echo "gebruiker is niet aanwezig";
     }
-
-
-
-    // if (isset($_POST["username"]) && isset($_POST["password"]) !== "") {
-    //     if ($_POST["username"] == $username && $_POST["password"] == $password) {
-
-    //         $role = 'beheer';
-
-    //         $_SESSION['role'] = $role;
-
-    //         if ($role == 'beheer') {
-    //             header("Location: beheer.php");
-    //         }
-    //     }
-    // }
-
 }
 
 ?>
