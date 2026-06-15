@@ -62,6 +62,7 @@ if (isset($_POST["username"])) {
 
                     <button class="login-button" type="submit">Login</button>
                     <a class="login-link" href="account-aanmaken.php">Account aanmaken</a>
+                    <a class="login-link" href="wachtwoord-vergeten.php">Wachtwoord vergeten</a>
                 </form>
             </div>
         </section>
