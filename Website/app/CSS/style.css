@@ -522,7 +522,13 @@ body {
     text-decoration: underline;
     font-size: 16px;
     margin-top: 10px;
+    border-radius: 10px;
 }
+
+.login-link {
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 10px;
 }
 .contact-form button,
 .contact-form input,
@@ -563,17 +569,12 @@ body {
     align-items: center;
 }
 .contact-info h2 {
-    color:#2C7344;
-<<<<<<< Updated upstream
-    
-    
-}    
-=======
-}    
+    color:#2C7344;       
+}
+
 .contact-info p {
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0px 4px 10px #C4C4C4    ;
+    box-shadow: 0px 4px 10px #C4C4C4;
 }
->>>>>>> Stashed changes
