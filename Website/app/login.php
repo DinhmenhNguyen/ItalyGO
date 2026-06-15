@@ -2,19 +2,34 @@
 session_start();
 include('includes/database.php');
 
-$username = "user";
-$password = "password";
+if (isset($_POST["username"])) {
 
-if (isset($_POST["username"]) && isset($_POST["password"]) !== "") {
-    if ($_POST["username"] == $username && $_POST["password"] == $password) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
-        $role = 'beheer';
+    $sql = "SELECT * FROM Gebruikers WHERE gebruikersnaam = :username";
+    $statement = $pdo->prepare($sql);
+    $statement->bindParam(":username", $username);
+    $statement->execute();
+    $gebruiker = $statement->fetch();
 
-        $_SESSION['role'] = $role;
+    if ($gebruiker) {
+        if ($password === $gebruiker["wachtwoord"]) {
 
-        if ($role == 'beheer') {
-            header("Location: beheer.php");
+            $role = $gebruiker["role"];
+
+            $_SESSION['role'] = $role;
+
+            if ($role == 'beheer') {
+                header("Location: beheer.php");
+            } else {
+                header("Location: klant-overzicht.php");
+            }
+        } else {
+            echo "wachtwoord klopt niet";
         }
+    } else {
+        echo "gebruiker is niet aanwezig";
     }
 }
 
@@ -46,7 +61,7 @@ if (isset($_POST["username"]) && isset($_POST["password"]) !== "") {
                     <input class="login-input" type="password" id="password" name="password" placeholder="••••••••" required>
 
                     <button class="login-button" type="submit">Login</button>
-                    <a href="account-aanmaken.php" class="login-link">Account aanmaken</a>
+                    <a class="login-link" href="account-aanmaken.php">Account aanmaken</a>
                 </form>
             </div>
         </section>
