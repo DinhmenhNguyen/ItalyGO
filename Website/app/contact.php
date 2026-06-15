@@ -4,7 +4,7 @@ session_start();
 
 <!DOCTYPE html>
 <html lang="en">
-
+<script src="maps.js"></script>
 <head>
     <?php
     include('includes/head.php');
@@ -43,6 +43,9 @@ session_start();
     <?php
     include('includes/footer.php');
     ?>
+    <script>
+        initMap();
+    </script>
 </body>
 
 </html>
