@@ -27,6 +27,12 @@ include('includes/database.php');
                 <p>Kies uit onze zorgvuldig geselecteerde Italiaanse steden</p>
             </div>
         </section>
+        <div class="search-container">
+            <form action="bestemmingen.php" method="GET">
+                <input type="text" name="search" placeholder="Zoek naar een bestemming...">
+                <button type="submit">Zoeken</button>
+            </form>
+        </div>
 
         <?php
         $sql = "SELECT * FROM Bestemmingen";
