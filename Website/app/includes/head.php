@@ -7,5 +7,7 @@
     rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script src="JS/nav.js"></script>
+<script src="JS/maps.js"></script>
 <title>ItalyGO</title>
 <link rel="icon" type="image/x-icon" href="Images/white-bus-icon.png">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr02wZMhDlmK5WE3wZ4zlaZP3v7I2DEoo&callback=initMap" async defer></script>
