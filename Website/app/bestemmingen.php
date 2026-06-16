@@ -46,6 +46,7 @@ include('includes/database.php');
         $statement->fetchAll();
 
         foreach ($bestemmingen as $bestemming) {
+            $id = $bestemming['id'];
             $naam = $bestemming['naam'];
             $beschrijving = $bestemming['beschrijving'];
             $prijs = $bestemming['prijs'];
@@ -67,7 +68,7 @@ include('includes/database.php');
             echo "<p>$beschrijving</p>";
             echo "<span class='bestemmingen-price'>Vanaf €$prijs</span>";
             echo "<div class='bestemmingen-link-button-container'>";
-            echo "<a class='bestemmingen-link-button' href='booking-info.php'>Meer Info →</a>";
+            echo "<a class='bestemmingen-link-button' href='booking-info.php?id=$id'>Meer Info →</a>";
             echo "</div>";
             echo "</div>";
             echo "</div>";
