@@ -58,7 +58,7 @@ if (isset($_POST["username"])) {
                     <input class="login-input" type="text" id="username" name="username" placeholder="gebruikersnaam" required>
 
                     <label for="password">Password:</label>
-                    <input class="login-input" type="password" id="password" name="password" placeholder="••••••••" required>
+                    <input class="login-input" type="password" id="password" name="password" placeholder="•••••" required>
 
                     <button class="login-button" type="submit">Login</button>
                     <a class="login-link" href="account-aanmaken.php">Account aanmaken</a>
