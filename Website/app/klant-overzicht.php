@@ -1,9 +1,23 @@
 <?php
 session_start();
+include('includes/database.php');
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
     header("Location: login.php");
 }
+
+$userId = $_SESSION['id'];
+
+$sql = "SELECT Boekingen.id, Bestemmingen.naam
+        FROM Boekingen
+        JOIN Bestemmingen ON Boekingen.bestemming_id = Bestemmingen.id
+        WHERE Boekingen.gebruikers_id = $userId";
+
+$statement = $pdo->prepare($sql);
+
+$statement->execute();
+$bestemmingen = $statement->fetchAll();
+$statement->fetchAll();
 
 ?>
 
@@ -26,7 +40,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
             <div class="klant-overzicht-header">
                 <div>
                     <a href="index.php">← ItalyGO Travel</a>
-                    <h2>Mijn account</h2>
+                    <h2><?php echo $_SESSION['gebruikersnaam']; ?>'s account</h2>
                 </div>
                 <div>
                     <a class="uitlog" href="uitlog.php">
@@ -44,6 +58,15 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
                 </div>
                 <div>
                     <?php
+
+                    foreach ($bestemmingen as $bestemming) {
+                        $naam = $bestemming['naam'];
+
+                        echo "<div>";
+                        echo "<h1>$naam</h1>";
+                        echo "</div>";
+                    }
+
                     ?>
                 </div>
             </div>

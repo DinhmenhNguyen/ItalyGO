@@ -59,7 +59,7 @@ $bestemming = $statement->fetch();
                         <p><?php echo $bestemming['beschrijving']; ?></p>
                         <span class='bestemmingen-price'>Vanaf €<?php echo $bestemming['prijs']; ?></span>
                         <div class='bestemmingen-link-button-container'>
-                            <a class='bestemmingen-link-button' href='booking.php'>Meer Info →</a>
+                            <a class='bestemmingen-link-button' href='includes/book.php?id=<?php echo $bestemming["id"] ?>'>Kopen →</a>
                         </div>
                     </div>
                 </div>

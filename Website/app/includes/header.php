@@ -12,7 +12,7 @@
                 <a class="header-href" href="contact.php">Contact</a>
             </li>
             <li>
-                <a class="header-href" href="booking.php">Booking</a>
+                <a class="header-href" href="klant-overzicht.php">Mijn overzicht</a>
             </li>
             <li>
                 <a class="header-href" href="login.php">Login</a>
@@ -32,7 +32,7 @@
                 <a class="header-href" href="contact.php">Contact</a>
             </li>
             <li>
-                <a class="header-href" href="booking.php">Booking</a>
+                <a class="header-href" href="klant-overzicht.php">Mijn overzicht</a>
             </li>
             <li>
                 <a class="header-href" href="login.php">Login</a>
