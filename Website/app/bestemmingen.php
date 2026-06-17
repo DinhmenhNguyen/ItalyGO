@@ -11,6 +11,7 @@ include('includes/database.php');
     <?php
     include('includes/head.php');
     ?>
+    <script src="JS/versturen.js"></script>
 </head>
 
 <body>
@@ -28,8 +29,8 @@ include('includes/database.php');
             </div>
         </section>
         <div class="search-container">
-            <form action="bestemmingen.php" method="GET">
-                <input type="text" name="search" placeholder="Zoek naar een bestemming...">
+            <form action="bestemmingen.php">
+                <input type="text" id="searchInput" name="search" placeholder="Zoek naar een bestemming"...>
                 <button type="submit">Zoeken</button>
             </form>
         </div>

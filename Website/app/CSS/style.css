@@ -582,3 +582,13 @@ body {
     height: 300px;
    
 }
+.search-container input,
+.search-container button{
+    border-radius: 8px;
+    padding: 10px;
+}
+   
+.search-container{
+    border-radius: 8px;
+    padding: 10px;
+}
