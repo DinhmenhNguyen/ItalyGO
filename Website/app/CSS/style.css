@@ -598,3 +598,10 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
+
+.bestemming-klant-overzicht {
+    display: flex;
+    outline: 2px solid black;
+    margin: 10px 20px;
+    padding: 5px 20px;
+}

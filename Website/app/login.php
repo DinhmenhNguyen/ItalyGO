@@ -17,8 +17,11 @@ if (isset($_POST["username"])) {
         if ($password === $gebruiker["wachtwoord"]) {
 
             $role = $gebruiker["role"];
+            $id = $gebruiker['id'];
 
+            $_SESSION['gebruikersnaam'] = $username;
             $_SESSION['role'] = $role;
+            $_SESSION['id'] = $id;
 
             if ($role == 'beheer') {
                 header("Location: beheer.php");
