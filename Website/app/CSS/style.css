@@ -592,3 +592,18 @@ body {
     border-radius: 8px;
     padding: 10px;
 }
+.klant-overzicht-header {
+    display: flex;
+    padding: 20px;
+    margin: 10px 0px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C7344;
+}
+
+.uitlog {
+    background-color: #17803F;
+    padding: 10px;
+    border-radius: 10px;
+}

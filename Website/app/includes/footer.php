@@ -25,6 +25,7 @@
             <h2>
                 Amsterdam, Nederland
             </h2>
+            <a href="privacy-policy.php"><h2>Privacy policy</h2></a>
         </div>
     </div>
     <div class="rechten-footer">
