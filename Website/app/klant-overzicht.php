@@ -2,9 +2,12 @@
 session_start();
 include('includes/database.php');
 
+var_dump($_POST);
+
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
     header("Location: login.php");
 }
+
 
 $userId = $_SESSION['id'];
 
@@ -61,9 +64,11 @@ $statement->fetchAll();
 
                     foreach ($bestemmingen as $bestemming) {
                         $naam = $bestemming['naam'];
+                        $id = $bestemming['id'];
 
-                        echo "<div>";
+                        echo "<div class='bestemming-klant-overzicht'>";
                         echo "<h1>$naam</h1>";
+                        echo "<a href='verwijder-boeking.php?id=$id'>Verwijder</a>";
                         echo "</div>";
                     }
 
