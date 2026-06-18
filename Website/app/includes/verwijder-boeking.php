@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('includes/database.php');
+include('database.php');
 
 $deleteId = $_GET['id'];
 
@@ -10,4 +10,4 @@ $statement->bindParam(':id', $deleteId);
 $statement->bindParam(':gebruikers_id', $_SESSION['id']);
 $statement->execute();
 
-header('Location: klant-overzicht.php');
+header('Location: /klant-overzicht.php');

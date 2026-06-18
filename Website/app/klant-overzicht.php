@@ -2,8 +2,6 @@
 session_start();
 include('includes/database.php');
 
-var_dump($_POST);
-
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
     header("Location: login.php");
 }
@@ -46,7 +44,7 @@ $statement->fetchAll();
                     <h2><?php echo $_SESSION['gebruikersnaam']; ?>'s account</h2>
                 </div>
                 <div>
-                    <a class="uitlog" href="uitlog.php">
+                    <a class="uitlog" href="includes/uitlog.php">
                         ← Uitloggen
                     </a>
                 </div>
@@ -68,7 +66,7 @@ $statement->fetchAll();
 
                         echo "<div class='bestemming-klant-overzicht'>";
                         echo "<h1>$naam</h1>";
-                        echo "<a href='verwijder-boeking.php?id=$id'>Verwijder</a>";
+                        echo "<a href='includes/verwijder-boeking.php?id=$id'>Verwijder</a>";
                         echo "</div>";
                     }
 
