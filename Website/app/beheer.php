@@ -5,16 +5,6 @@ include('includes/database.php');
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
     header("Location: login.php");
 }
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
-    $deleteId = $_POST['delete_id'];
-
-    // SQL-DELETE query om het gerecht uit de tabel te verwijderen.
-    $sql = "DELETE FROM Gerechten WHERE id = :id";
-    $statement = $pdo->prepare($sql);
-    $statement->bindParam(':id', $deleteId);
-    $statement->execute();
-}
 ?>
 
 <!DOCTYPE html>
@@ -67,10 +57,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
                     echo "<div class='bestemmingen-info'>";
                     echo "<div>";
                     echo "<h1>$naam</h1>";
-                    echo "<button type='submit' class='btn-item-action btn-delete' title='Verwijderen' onclick=\"return confirm('Weet je zeker dat je dit gerecht wilt verwijderen?');\">Verwijder</button>";
+                    echo "<a href='includes/verwijder-bestemming.php?id=$id'>Verwijder</a>";
                     echo "</div>";
                     echo "<p>$beschrijving</p>";
+                    echo "<div>";
                     echo "<span class='bestemmingen-price'>Vanaf €$prijs</span>";
+                    echo "<a href='aanpassen-bestemming.php?id=$id'>Edit</a>";
                     echo "<div class='bestemmingen-link-button-container'>";
                     echo "<a class='bestemmingen-link-button' href='booking-info.php?id=$id'>Meer Info →</a>";
                     echo "</div>";
