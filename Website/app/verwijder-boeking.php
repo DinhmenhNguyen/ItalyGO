@@ -1,0 +1,13 @@
+<?php
+session_start();
+include('includes/database.php');
+
+$deleteId = $_GET['id'];
+
+$deletesql = "DELETE FROM Boekingen WHERE id = :id AND gebruikers_id = :gebruikers_id";
+$statement = $pdo->prepare($deletesql);
+$statement->bindParam(':id', $deleteId);
+$statement->bindParam(':gebruikers_id', $_SESSION['id']);
+$statement->execute();
+
+header('Location: klant-overzicht.php');
