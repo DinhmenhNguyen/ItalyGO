@@ -23,7 +23,10 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
 
     <main>
         <section>
-            <h1>Alle bestemmingen</h1>
+            <div>
+                <h1>Alle bestemmingen</h1>
+                <a href="toevoeg-bestemming.php">Voeg een bestemming toe</a>
+            </div>
             <div>
                 <?php
                 $sql = "SELECT * FROM Bestemmingen";
