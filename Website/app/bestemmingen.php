@@ -29,14 +29,22 @@ include('includes/database.php');
             </div>
         </section>
         <div class="search-container">
-            <form action="bestemmingen.php">
-                <input type="text" id="searchInput" name="search" placeholder="Zoek naar een bestemming"...>
+            <form method="GET" action="bestemmingen.php">
+                <input type="text" name="search" placeholder="Zoek naar een bestemming"...>
                 <button type="submit">Zoeken</button>
             </form>
         </div>
-
         <?php
-        $sql = "SELECT * FROM Bestemmingen";
+        if (isset($_GET['search'])) {
+            $search = $_GET['search'];
+            $sql = "SELECT * FROM Bestemmingen WHERE naam LIKE :search";
+            $statement = $pdo->prepare($sql);
+            $statement->bindParam(":search", $search); 
+            $statement->execute();
+
+            $bestemmingen = $statement->fetchAll();
+        }else{
+             $sql = "SELECT * FROM Bestemmingen";
 
         $statement = $pdo->prepare($sql);
 
@@ -44,8 +52,11 @@ include('includes/database.php');
 
         $bestemmingen = $statement->fetchAll();
 
-        $statement->fetchAll();
 
+        }    
+
+
+          
         foreach ($bestemmingen as $bestemming) {
             $id = $bestemming['id'];
             $naam = $bestemming['naam'];
