@@ -610,7 +610,71 @@ body {
 
 .bestemming-klant-overzicht {
     display: flex;
-    outline: 2px solid black;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: #ccc 0px 0px 10px;
+    border-radius: 30px;
     margin: 10px 20px;
     padding: 5px 20px;
+}
+
+.klant-overzicht-mijn-reizen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.button-nieuw-reis {
+    display: flex;
+    background-color:#17803F;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.alle-bestemmingen-beheer {
+    display: flex;
+    background-color: #17803F;
+    height: 20vh;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: white;
+}
+
+.voeg-bestemming-button {
+    display: flex;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.naam-verwijder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verwijder-knop {
+    background-color: #17803F;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.prijs-edit-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.edit-knop {
+    background-color: #17803F;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
 }

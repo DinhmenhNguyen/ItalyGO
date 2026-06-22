@@ -23,9 +23,9 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
 
     <main>
         <section>
-            <div>
+            <div class="alle-bestemmingen-beheer">
                 <h1>Alle bestemmingen</h1>
-                <a href="toevoeg-bestemming.php">Voeg een bestemming toe</a>
+                <a class="voeg-bestemming-button" href="toevoeg-bestemming.php">Voeg een bestemming toe</a>
             </div>
             <div>
                 <?php
@@ -58,14 +58,15 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
                     echo "<img class='bestemmingen-image' src='bestemmingen-images/$afbeelding' alt='Bestemming 1'>";
                     echo "</div>";
                     echo "<div class='bestemmingen-info'>";
-                    echo "<div>";
+                    echo "<div class='naam-verwijder'>";
                     echo "<h1>$naam</h1>";
-                    echo "<a href='includes/verwijder-bestemming.php?id=$id'>Verwijder</a>";
+                    echo "<a class='verwijder-knop' href='includes/verwijder-bestemming.php?id=$id'>Verwijder</a>";
                     echo "</div>";
                     echo "<p>$beschrijving</p>";
-                    echo "<div>";
-                    echo "<span class='bestemmingen-price'>Vanaf €$prijs</span>";
-                    echo "<a href='aanpassen-bestemming.php?id=$id'>Edit</a>";
+                    echo "<div class='prijs-edit-container'>";
+                    echo "<span>Vanaf €$prijs</span>";
+                    echo "<a class='edit-knop' href='aanpassen-bestemming.php?id=$id'>Edit</a>";
+                    echo "</div>";
                     echo "<div class='bestemmingen-link-button-container'>";
                     echo "<a class='bestemmingen-link-button' href='booking-info.php?id=$id'>Meer Info →</a>";
                     echo "</div>";

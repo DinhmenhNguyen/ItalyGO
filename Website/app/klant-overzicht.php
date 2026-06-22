@@ -53,9 +53,9 @@ $statement->fetchAll();
 
         <section>
             <div>
-                <div>
+                <div class="klant-overzicht-mijn-reizen">
                     <h1>Mijn Reizen</h1>
-                    <a href="bestemmingen.php">Nieuwe reis boeken</a>
+                    <a class="button-nieuw-reis" href="bestemmingen.php">Nieuwe reis boeken</a>
                 </div>
                 <div>
                     <?php
