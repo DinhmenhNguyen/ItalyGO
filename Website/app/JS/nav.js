@@ -8,4 +8,3 @@ function togglemenu() {
 }
 
 // PDO
-// Pagins's goed beveiligen.
