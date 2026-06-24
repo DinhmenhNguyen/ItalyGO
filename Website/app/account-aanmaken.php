@@ -9,6 +9,7 @@ if(isset($_POST["username"])){
     
     if (isset($gebruikersnaam) && isset($wachtwoord) !== "") {
         $sql = "INSERT INTO Gebruikers (gebruikersnaam, wachtwoord) VALUES ('$gebruikersnaam', '$wachtwoord')";
+        
     
         $statement = $pdo->prepare($sql);
     

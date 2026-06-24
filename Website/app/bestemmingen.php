@@ -36,12 +36,11 @@ include('includes/database.php');
         </div>
         <?php
         if (isset($_GET['search'])) {
-            $search = $_GET['search'];
+            $search = "%" . $_GET['search'] . "%";
             $sql = "SELECT * FROM Bestemmingen WHERE naam LIKE :search";
             $statement = $pdo->prepare($sql);
             $statement->bindParam(":search", $search); 
             $statement->execute();
-
             $bestemmingen = $statement->fetchAll();
         }else{
              $sql = "SELECT * FROM Bestemmingen";
@@ -52,11 +51,8 @@ include('includes/database.php');
 
         $bestemmingen = $statement->fetchAll();
 
-
         }    
 
-
-          
         foreach ($bestemmingen as $bestemming) {
             $id = $bestemming['id'];
             $naam = $bestemming['naam'];
