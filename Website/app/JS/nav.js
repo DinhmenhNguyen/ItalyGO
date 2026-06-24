@@ -6,3 +6,6 @@ function togglemenu() {
     dropdown.hidden = false;
   }
 }
+
+// PDO
+// Pagins's goed beveiligen.

@@ -2,6 +2,11 @@
 session_start();
 include('database.php');
 
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
+    header("Location: login.php");
+    exit();
+}
+
 $deleteId = $_GET['id'];
 
 $deletesql = "DELETE FROM Bestemmingen WHERE id = :id";

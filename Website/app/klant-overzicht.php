@@ -4,6 +4,7 @@ include('includes/database.php');
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
     header("Location: login.php");
+    exit();
 }
 
 
