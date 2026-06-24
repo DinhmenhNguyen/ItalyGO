@@ -4,6 +4,7 @@ include('includes/database.php');
 
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
     header("Location: login.php");
+    exit();
 }
 
 
@@ -12,13 +13,13 @@ $userId = $_SESSION['id'];
 $sql = "SELECT Boekingen.id, Bestemmingen.naam
         FROM Boekingen
         JOIN Bestemmingen ON Boekingen.bestemming_id = Bestemmingen.id
-        WHERE Boekingen.gebruikers_id = $userId";
+        WHERE Boekingen.gebruikers_id = :userId";
 
 $statement = $pdo->prepare($sql);
+$statement->bindParam(':userId', $userId);
 
 $statement->execute();
 $bestemmingen = $statement->fetchAll();
-$statement->fetchAll();
 
 ?>
 
