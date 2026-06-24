@@ -2,6 +2,11 @@
 session_start();
 include('database.php');
 
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
+    header("Location: login.php");
+    exit();
+}
+
 $deleteId = $_GET['id'];
 
 $deletesql = "DELETE FROM Boekingen WHERE id = :id AND gebruikers_id = :gebruikers_id";

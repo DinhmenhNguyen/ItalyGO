@@ -1,6 +1,11 @@
 <?php
 session_start();
 include('database.php');
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'klant') {
+    header("Location: login.php");
+    exit();
+}
 // get id from travel
 $id = $_GET["id"];
 
