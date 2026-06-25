@@ -38,8 +38,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'beheer') {
 
                 $bestemmingen = $statement->fetchAll();
 
-                $statement->fetchAll();
-
                 foreach ($bestemmingen as $bestemming) {
                     $id = $bestemming['id'];
                     $naam = $bestemming['naam'];
